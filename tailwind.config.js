@@ -13,6 +13,13 @@ module.exports = {
     "./src/**/*.{jsx,tsx,html}",
     "./node_modules/@material-tailwind/react/**/*.{js,ts,jsx,tsx}"
   ],
-  theme: {},
+  theme: {
+    extend: {
+      backgroundImage: {
+        'github-stars-text-light': 'linear-gradient(to right, #000, #444)',
+        'github-stars-text-dark': 'linear-gradient(to right, #fff, #aaa)',
+      },
+    }
+  },
   plugins: [mtConfig],
 };

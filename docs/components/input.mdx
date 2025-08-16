@@ -1,0 +1,78 @@
+---
+title: "Input"
+description: "Free and Open Source React Native Framework "
+keywords: [
+  "Input",
+  "Input – Documentation"
+]
+source_url: "/docs/components/input"
+---
+
+## Input
+
+Built on top of React Native's TextInput component, this basic component which allows the user to enter text was styled based on Galio's own identity theme.
+
+![Input](/img/docs/input/input.png)
+
+## Usage
+
+Imports:
+
+```jsx
+import { Input, Block } from 'galio-framework';
+```
+
+Code example:
+
+```jsx
+<Input placeholder="regular" />
+<Input placeholder="theme" color={theme.COLORS.THEME} style={{ borderColor: theme.COLORS.THEME }} placeholderTextColor={theme.COLORS.THEME} />
+<Input placeholder="info" color={theme.COLORS.INFO} style={{ borderColor: theme.COLORS.INFO }} placeholderTextColor={theme.COLORS.INFO}/>
+<Input placeholder="warning" color={theme.COLORS.WARNING} style={{ borderColor: theme.COLORS.WARNING }} placeholderTextColor={theme.COLORS.WARNING}/>
+<Input placeholder="error" color={theme.COLORS.ERROR} style={{ borderColor: theme.COLORS.ERROR }} placeholderTextColor={theme.COLORS.ERROR}/>
+<Input placeholder="success" color={theme.COLORS.SUCCESS} style={{ borderColor: theme.COLORS.SUCCESS }} placeholderTextColor={theme.COLORS.SUCCESS}/>
+```
+
+Code example:
+
+```jsx
+<Input placeholder="password" password viewPass />
+<Input placeholder="rounded input" rounded />
+<Input
+  placeholder="Input with Icon on right"
+  right
+  icon="heart"
+  family="antdesign"
+  iconSize={14}
+  iconColor="red"
+/>
+<Input
+  placeholder="Input with custom styling and help"
+  style={{ borderColor: "red" }}
+  help="Bottom help text"
+  bottomHelp
+  placeholderTextColor="#4F8EC9"
+/>
+```
+
+## Props
+
+| Prop                     | Type    | Default                        | Description                                                                 |
+|--------------------------|---------|--------------------------------|-----------------------------------------------------------------------------|
+| **type**                 | string  | `'default'`                    | Basically the TextInput's `keyboardType` prop. Options: `'default'`, `'number-pad'`, `'decimal-pad'`, `'numeric'`, `'email-address'`, `'phone-pad'`. |
+| **password**             | bool    | false                          | Tells the input that this is going to be a password input.                  |
+| **placeholderTextColor** | string  | `theme.COLORS.PLACEHOLDER`     | Sets the placeholder's text color.                                          |
+| **label**                | string  | null                           | Sets the label of the input.                                                |
+| **bgColor**              | string  | null                           | Sets the Input's background color.                                          |
+| **rounded**              | bool    | false                          | Sets the corners to be rounded.                                             |
+| **borderless**           | bool    | false                          | Sets the Input's `borderWidth` to 0.                                        |
+| **viewPass**             | bool    | false                          | Adds functionality for toggling password visibility.                        |
+| **icon**                 | string  | null                           | Choose your Icon's name from Expo's icon list.                              |
+| **iconColor**            | string  | null                           | Changes the Icon's color.                                                   |
+| **family**               | string  | null                           | Choose your Icon's family from the same list.                               |
+| **color**                | string  | null                           | Sets the Input's text color.                                                |
+| **help**                 | string  | null                           | Sets a helper line for more information regarding your input.               |
+| **left**                 | bool    | true                           | Sets the Icon to the left of the Input.                                     |
+| **right**                | bool    | false                          | Sets the Icon to the right of the Input.                                    |
+| **topHelp**              | bool    | true                           | Sets the helper line above the input.                                       |
+| **bottomHelp**           | bool    | false                          | Sets the helper line below the input.                                       |

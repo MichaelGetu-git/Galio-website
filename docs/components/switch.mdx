@@ -1,0 +1,44 @@
+---
+title: "Slider"
+description: "Free and Open Source React Native Framework "
+keywords: [
+  "Slider",
+  "Slider – Documentation"
+]
+source_url: "/docs/components/slider"
+---
+
+## Switch
+
+This component was built on top of React Native's Switch component and so it inherits all the props the native component has. This is a controlled component which requires the onValueChange prop so you can update the value state.
+
+![Switch](/img/docs/switch/switch.png)
+
+### Usage
+
+Imports:
+
+```jsx
+import { Switch} from 'galio-framework';
+```
+
+Simple example:
+
+```jsx
+<Switch
+  value={this.state["switch-1"]}
+  onValueChange={() => this.toggleSwitch("switch-1")}
+/>
+```
+
+### Props
+
+| Prop                | Type                                                                              | Default                                                                         | Description                                                                                       |
+| ------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| color               | oneOfType(['primary', 'theme', 'error', 'warning', 'success', 'info']), string    | GalioTheme.COLORS.PRIMARY                                                       |                                                                                                   |
+| disabled            | bool                                                                              | false                                                                           |                                                                                                   |
+| initialValue        | bool                                                                              | false                                                                           |                                                                                                   |
+| trackColor          | object                                                                            | { false: GalioTheme.COLORS.GREY, true: GalioTheme.COLORS.PRIMARY }              |                                                                                                   |
+| ios_backgroundColor | string                                                                            | GalioTheme.COLORS.GREY                                                          |                                                                                                   |
+| onChange            | function                                                                          | () => {}                                                                        |                                                                                                   |
+| ...Switch.propTypes |                                                                                   |                                                                                 | Inherits all the props the native Switch component has, so you can use any of those props         |

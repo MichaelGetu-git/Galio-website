@@ -1,0 +1,61 @@
+---
+title: "Button"
+description: "Free and Open Source React Native Framework "
+keywords: [
+  "Button",
+  "Button – Documentation"
+]
+source_url: "/docs/components/button"
+---
+
+## Button
+
+A basic button component that is looking good on any platform. This react native button is ready to handle most used scenarios which will enable you to build apps faster with cleaner code.
+
+![Button](/img/docs/button/button.png)
+
+### Usage
+
+Imports:
+
+```jsx
+import { Button } from 'galio-framework';
+```
+
+![Button](/img/docs/button/buttons_simple.png)
+
+Code example:
+
+```jsx
+<Button>primary</Button>
+<Button color="info">info</Button>
+<Button color="success">success</Button>
+<Button color="warning">warning</Button>
+<Button color="error">error</Button>
+```
+
+![Button](/img/docs/button/buttons_advanced.png)
+
+### Props
+
+
+| Prop       | Type         | Default             | Description                                                                                            |
+| ---------- | ------------ | ------------------- | ------------------------------------------------------------------------------------------------------ |
+| ...TouchableOpacity.propTypes                   |                                                                                                        |                                                                                                                                                                                                                                                                                                               
+| capitalize | bool         | false               | Transforms the first character in a capital letter                                                     |                                                                                                                                                                                                                                                                                                                             
+| color      | string       | 'primary'           | your options are: 'primary', 'theme', 'error', 'warning', 'success', 'transparent' or your own color   |                                                                                                                                                                                                                                                                                                                                             
+| disabled   | bool         | false               | Disables the button                                                                                    |                                                                                                                                                                                                                                                                                                                                
+| icon       | bool, string | false               | pick whatever icon you want from Expo's icons                                                          |                                                                                                                                                                                                                                                                                                                                            
+| iconColor  | bool, string | theme.COLORS.BLACK  | sets the icon's color                                                                                  |                                                                                                                                                                                                                                                                                                                                           
+| iconFamily | bool, string | false               | pick whatever icon family suits the icon you chose from Expo's icons                                   |                                                                                                                                                                                                                                                                                                                                            
+| iconSize   | number       | 14                  | sets the icon's size                                                                                   |                                                                                                                                                                                                                                                                                                                                           
+| loading    | bool         | false               | Uses the for the loading effect                                                                        |                                                                                                                                                                                                                                                                                                                                              
+| loadingSize| string       | 'small'             | your options are: 'small', 'large'                                                                     |                                                                                                                                                                                                                                                                                                                                          
+| lowercase  | bool         | false               | makes all letters lowercase                                                                            |                                                                                                                                                                                                                                                                                                                                             
+| onlyIcon   | bool         | false               | adds specific styling for using only an icon in your button                                            |                                                                                                                                                                                                                                                                                                                                            
+| opacity    | number       | 0.8                 | changes the button's opacity                                                                           |                                                                                                                                                                                                                                                                                                                                                   
+| radius     | number       | 0                   | changes the button's radius                                                                            |                                                                                                                                                                                                                                                                                                                                                   
+| shadowColor| bool, string | false               | the default shadowColor is based on the button's color but you can also write a specific shadowColor   |                                                                                                                                                                                                                                                                                                                                                           
+| shadowless | bool         | false               | removes shadow                                                                                         |                                                                                                                                                                                                                                                                                                                                                        
+| size       | number       | 'large'             | your options are: 'large', 'small'                                                                     |                                                                                                                                                                                                                                                                                                                                                        
+| uppercase  | bool         | false               | makes all letters uppercase                                                                            |                                                                                                                                                                                                                                                                                                                                                        

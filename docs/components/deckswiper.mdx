@@ -50,13 +50,31 @@ const elements = [
 ];
 ```
 
+Advanced examples:
+
+```jsx
+<DeckSwiper
+  components={elements}
+  onSwipeLeft={(index) => console.log('Swiped left on:', index)}
+  onSwipeRight={(index) => console.log('Swiped right on:', index)}
+  onSwipeAll={(direction) => console.log('All cards swiped:', direction)}
+  style={{ height: 300 }}
+  cardStyle={{ borderRadius: 16 }}
+  cardElevation={8}
+/>
+```
+
 ### Props
 
 | Prop                   | Type     | Default   | Description                                                                 |
 |------------------------|----------|-----------|-----------------------------------------------------------------------------|
-| **style**              | object   | —         | Styling the Block which encapsulates the components used for swiping.       |
-| **components**         | array    | null      | An array of components used for building the deck.                          |
-| **onSwipeRight**       | function | ()=>{}    | Function called when the user swipes right.                                 |
-| **onSwipeLeft**        | function | ()=>{}    | Function called when the user swipes left.                                  |
-| **focusedElementStyle**| object   | —         | Styling for the first element of the deck.                                  |
-| **nextElementStyle**   | object   | —         | Styling for the elements underneath the first element of the deck.          |
+| **components**         | array    | null      | Array of components to render in the deck                                  |
+| **onSwipeLeft**        | function | ()=>{}    | Callback when swiping left                                                 |
+| **onSwipeRight**       | function | ()=>{}    | Callback when swiping right                                                |
+| **onSwipeAll**         | function | ()=>{}    | Callback when all cards are swiped                                         |
+| **style**              | object   | null      | Container styles                                                            |
+| **cardStyle**          | object   | null      | Individual card styles                                                      |
+| **cardElevation**      | number   | 4         | Card elevation/shadow                                                       |
+| **swipeThreshold**     | number   | 120       | Distance required to trigger swipe                                         |
+| **animationDuration**  | number   | 300       | Animation duration in milliseconds                                         |
+| **...View.props**      | -        | -         | All React Native View props are supported                                  |

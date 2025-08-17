@@ -10,7 +10,7 @@ source_url: "/docs/components/accordion"
 
 ## Accordion
 
-This accordion component made by Galio is easily costumisable. Built with Flatlist, this expandable list can be used to only show relevant information and save space in your screen.
+This accordion component made by Galio is easily customizable. Built with Flatlist, this expandable list can be used to only show relevant information and save space in your screen.
 
 ![Accordion](/img/docs/accordion/accordion.gif)
 
@@ -30,7 +30,7 @@ Simple example:
 </Block>
 ```
 
- The data array looks like:
+The data array looks like:
 
 ```jsx
 const data = [
@@ -46,17 +46,42 @@ const data = [
 ];
 ```
 
+Advanced examples:
+
+```jsx
+<Accordion
+  dataArray={data}
+  opened={0}
+  icon="chevron-down"
+  iconFamily="feather"
+  iconSize={20}
+  iconColor="primary"
+  listStyle={{ backgroundColor: 'white' }}
+  style={{ margin: 16 }}
+/>
+
+<Accordion
+  dataArray={customData}
+  opened={-1}
+  customIcon={
+    <Icon name="plus" family="feather" size={16} color="primary" />
+  }
+  onToggle={(index) => console.log('Toggled:', index)}
+/>
+```
+
 ### Props
 
 | Prop            | Type     | Default | Description                                                                                                     |
 |-----------------|----------|---------|-----------------------------------------------------------------------------------------------------------------|
-| style           | object   |         | Styling the Block which encapsulates the whole FlatList used for rendering the elements.                        |
-| dataArray       | array    | null    | Array of objects with the following keys: title, content, icon: { name, family, size, color, style}             |
-| opened          | number   | -1      | Index number representing which of the elements of your array should be opened when the component first renders.|
-| listStyle       | object   |         | FlatList style prop.                                                                                            |
-| icon            | component|  null   | Icon for the un-expanded piece of content.                                                                      |
-| expandedIcon    | component|  null   | Icon used when the content is expanded.                                                                         |
-| headerStyle     | object   |         | Object styling the header of the Accordion.                                                                     |
-| contentStyle    | object   |         | Object styling the content section of the Accordion.                                                            |
-| onAccordionClose| function | () => {}| Function called when the user closes one of the Accordion's items.                                              |
-| onAccordionOpen | function | () => {}| Function called when the user expands one of the Accordion's items.                                             |
+| **dataArray**   | array    | null    | Array of objects with keys: title, content, icon: { name, family, size, color, style}                          |
+| **opened**      | number   | -1      | Index of initially opened accordion item                                                                       |
+| **icon**        | string   | null    | Icon name for accordion items                                                                                  |
+| **iconFamily**  | string   | null    | Icon family for accordion items                                                                                |
+| **iconSize**    | number   | 16      | Icon size                                                                                                       |
+| **iconColor**   | string   | null    | Icon color                                                                                                      |
+| **customIcon**  | component| null    | Custom icon component                                                                                           |
+| **listStyle**   | object   | null    | FlatList style                                                                                                  |
+| **style**       | object   | null    | Container styles                                                                                                |
+| **onToggle**    | function | null    | Callback when accordion item is toggled                                                                        |
+| **...FlatList.props** | - | - | All FlatList props are supported                                                                               |

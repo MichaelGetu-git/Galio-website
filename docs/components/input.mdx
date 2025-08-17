@@ -22,7 +22,7 @@ Imports:
 import { Input, Block } from 'galio-framework';
 ```
 
-Code example:
+Basic examples:
 
 ```jsx
 <Input placeholder="regular" />
@@ -33,7 +33,7 @@ Code example:
 <Input placeholder="success" color={theme.COLORS.SUCCESS} style={{ borderColor: theme.COLORS.SUCCESS }} placeholderTextColor={theme.COLORS.SUCCESS}/>
 ```
 
-Code example:
+Advanced examples:
 
 ```jsx
 <Input placeholder="password" password viewPass />
@@ -42,7 +42,7 @@ Code example:
   placeholder="Input with Icon on right"
   right
   icon="heart"
-  family="antdesign"
+  iconFamily="antdesign"
   iconSize={14}
   iconColor="red"
 />
@@ -55,24 +55,47 @@ Code example:
 />
 ```
 
+Modern usage with hooks:
+
+```jsx
+const [value, setValue] = useState('');
+
+<Input
+  value={value}
+  onChangeText={setValue}
+  placeholder="Controlled input"
+  color="primary"
+  rounded
+  shadowless
+/>
+```
+
 ## Props
 
 | Prop                     | Type    | Default                        | Description                                                                 |
 |--------------------------|---------|--------------------------------|-----------------------------------------------------------------------------|
-| **type**                 | string  | `'default'`                    | Basically the TextInput's `keyboardType` prop. Options: `'default'`, `'number-pad'`, `'decimal-pad'`, `'numeric'`, `'email-address'`, `'phone-pad'`. |
-| **password**             | bool    | false                          | Tells the input that this is going to be a password input.                  |
-| **placeholderTextColor** | string  | `theme.COLORS.PLACEHOLDER`     | Sets the placeholder's text color.                                          |
-| **label**                | string  | null                           | Sets the label of the input.                                                |
-| **bgColor**              | string  | null                           | Sets the Input's background color.                                          |
-| **rounded**              | bool    | false                          | Sets the corners to be rounded.                                             |
-| **borderless**           | bool    | false                          | Sets the Input's `borderWidth` to 0.                                        |
-| **viewPass**             | bool    | false                          | Adds functionality for toggling password visibility.                        |
-| **icon**                 | string  | null                           | Choose your Icon's name from Expo's icon list.                              |
-| **iconColor**            | string  | null                           | Changes the Icon's color.                                                   |
-| **family**               | string  | null                           | Choose your Icon's family from the same list.                               |
-| **color**                | string  | null                           | Sets the Input's text color.                                                |
-| **help**                 | string  | null                           | Sets a helper line for more information regarding your input.               |
-| **left**                 | bool    | true                           | Sets the Icon to the left of the Input.                                     |
-| **right**                | bool    | false                          | Sets the Icon to the right of the Input.                                    |
-| **topHelp**              | bool    | true                           | Sets the helper line above the input.                                       |
-| **bottomHelp**           | bool    | false                          | Sets the helper line below the input.                                       |
+| **value**                | string  | null                           | The input value (controlled component)                                     |
+| **onChangeText**         | function| null                           | Callback when text changes                                                 |
+| **type**                 | string  | `'default'`                    | Keyboard type. Options: `'default'`, `'number-pad'`, `'decimal-pad'`, `'numeric'`, `'email-address'`, `'phone-pad'` |
+| **password**             | bool    | false                          | Password input with secure text entry                                     |
+| **placeholderTextColor** | string  | `theme.COLORS.PLACEHOLDER`     | Placeholder text color                                                     |
+| **label**                | string  | null                           | Input label                                                                |
+| **bgColor**              | string  | null                           | Background color                                                           |
+| **rounded**              | bool    | false                          | Rounded corners                                                            |
+| **borderless**           | bool    | false                          | Removes border                                                             |
+| **viewPass**             | bool    | false                          | Password visibility toggle                                                 |
+| **icon**                 | string  | null                           | Icon name from Expo's icon library                                        |
+| **iconColor**            | string  | null                           | Icon color                                                                |
+| **iconFamily**           | string  | null                           | Icon family from Expo's icon library                                      |
+| **iconSize**             | number  | 14                             | Icon size                                                                 |
+| **color**                | string  | null                           | Text color                                                                |
+| **help**                 | string  | null                           | Helper text                                                               |
+| **left**                 | bool    | true                           | Icon on the left                                                          |
+| **right**                | bool    | false                          | Icon on the right                                                         |
+| **topHelp**              | bool    | true                           | Helper above input                                                        |
+| **bottomHelp**           | bool    | false                          | Helper below input                                                        |
+| **style**                | object  | null                           | Custom styles                                                             |
+| **inputStyle**           | object  | null                           | Custom input styles                                                       |
+| **labelStyle**           | object  | null                           | Custom label styles                                                       |
+| **helpStyle**            | object  | null                           | Custom help text styles                                                   |
+| **...TextInput.props**   | -       | -                              | All TextInput props are supported                                         |

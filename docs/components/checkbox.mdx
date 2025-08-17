@@ -22,7 +22,7 @@ import { Checkbox } from 'galio-framework';
 
 ![Checkbox](/img/docs/checkbox/checkbox_simple.png)
 
-Code example:
+Basic examples:
 
 ```jsx
 <Checkbox color="primary" label="Primary Checkbox" />
@@ -34,7 +34,7 @@ Code example:
 
 ![Checkbox](/img/docs/checkbox/checkbox_advanced.png)
 
-Code example:
+Advanced examples:
 
 ```jsx
 <Checkbox color="primary" flexDirection="row-reverse" label="row-reverse checkbox" />
@@ -44,28 +44,35 @@ Code example:
 <Checkbox color="success" image="https://images.unsplash.com/photo-1569780655478-ecffea4c165c?ixlib=rb-1.2.1" flexDirection="column-reverse"/>
 ```
 
-Code example:
+Modern usage with hooks:
 
 ```jsx
-<Checkbox color="warning" onChange={() => alert('Galio is cool')} label="onChange is here" />
+const [isChecked, setIsChecked] = useState(false);
+
+<Checkbox 
+  color="warning" 
+  value={isChecked}
+  onChange={setIsChecked} 
+  label="onChange is here" 
+/>
 ```
 
 ### Props
 
-
-| Prop          | Type    | Default       | Description                                                                                           |
-| ------------- | ------- | ------------- | ----------------------------------------------------------------------------------------------------- |
-| checkboxStyle | any     | null          | By sending an object you can style the checkbox's color, size and more.                               |
-| disabled      | bool    | false         | This disables the possibility of the checkbox being used.                                             |
-| flexDirection | string  | 'row'         | Maybe you need the checkbox to be on top of an image? You can do that with this prop.                 |
-| iconColor     | string  | '#fff'        | This prop changes the icon color.                                                                     |
-| iconName      | string  | 'check'       | This prop changes the icon.                                                                           |
-| iconSize      | number  | 15            | This prop changes the size of the icon.                                                               |
-| iconFamily    | string  | 'FontAwesome' | In case you need an icon from a different package, this prop helps you change the icon package.       |
-| image         | string  | null          | This allows you to place an image instead of text.                                                    |
-| imageStyle    | any     | null          | Style the way your image looks here!                                                                  |
-| initialValue  | bool    | false         | Should the initial state of your checkbox be false or true?                                           |
-| label         | string  | null          | The text next to your checkbox.                                                                       |
-| labelStyle    | any     | null          | Style your checkbox's text.                                                                           |
-| onChange      | function| () => {}      | This prop takes an arrow function and every time the user presses the checkbox the function is called.|
+| Prop              | Type    | Default       | Description                                                                                           |
+| ----------------- | ------- | ------------- | ----------------------------------------------------------------------------------------------------- |
+| **label**         | string  | null          | Checkbox label text                                                                                   |
+| **color**         | string  | 'primary'     | Checkbox color                                                                                        |
+| **value**         | bool    | false         | Controlled checkbox value                                                                             |
+| **onChange**      | function| null          | Callback when checkbox state changes                                                                  |
+| **initialValue**  | bool    | false         | Initial checkbox value                                                                                |
+| **disabled**      | bool    | false         | Disables the checkbox                                                                                 |
+| **flexDirection** | string  | 'row'         | Layout direction: 'row', 'row-reverse', 'column', 'column-reverse'                                    |
+| **iconName**      | string  | null          | Custom icon name                                                                                      |
+| **iconFamily**    | string  | null          | Custom icon family                                                                                    |
+| **image**         | string  | null          | Custom image URL                                                                                      |
+| **checkboxStyle** | object  | null          | Custom checkbox styles                                                                                |
+| **labelStyle**    | object  | null          | Custom label styles                                                                                   |
+| **containerStyle**| object  | null          | Custom container styles                                                                               |
+| **style**         | object  | null          | Custom styles                                                                                         |
 

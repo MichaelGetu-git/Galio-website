@@ -8,7 +8,6 @@ keywords: [
 source_url: "/docs/components/card"
 ---
 
-
 ## Card
 
 Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
@@ -38,24 +37,45 @@ Simple example:
 />
 ```
 
-### Props
+Advanced examples:
 
+```jsx
+<Card
+  flex
+  card
+  shadow
+  borderless
+  style={styles.card}
+  title="Custom Card"
+  caption="With custom styling"
+  titleStyle={{ color: 'primary' }}
+  captionStyle={{ color: 'muted' }}
+  footer={
+    <Block row space="between">
+      <Text size={12} color="muted">Footer content</Text>
+      <Button size="small" color="primary">Action</Button>
+    </Block>
+  }
+/>
+```
+
+### Props
 
 | Prop            | Type         | Default | Description                                                                                          |
 | --------------- | ------------ | ------- | ---------------------------------------------------------------------------------------------------- |
-| card            | bool         | true    | adding the necessary styles                                                                          |
-| shadow          | bool         | true    | adding the necessary styles for shadows                                                              |
-| borderless      | bool         | false   | adding the card's border                                                                             |
-| image           | string       | null    | write your relative path or URL to the image                                                         |
-| imageBlockStyle | object       | null    | styles for the Block wrapping the Image                                                              |                                                                                                                                                                                                                                                                                                                            
-| imageStyle      | object       | null    | styles for the Image                                                                                 |                                                                                                                                                                                                                                                                                                                         
-| avatar          | string       | null    | write your relative path or URL to the avatar's image                                                |                                                                                                                                                                                                                                                                                                                            
-| location        | string       | null    | where is this coming from? write the location of the author                                          |                                                                                                                                                                                                                                                                                                                           
-| locationColor   | bool, string | false   | the default locationColor is based on `theme.COLORS.MUTED`, but you can also write your own color    |                                                                                                                                                                                                                                                                                                                                    
-| title           | string       | null    | write your main card's title                                                                         |                                                                                                                                                                                                                                                                                                                      
-| titleColor      | string       | null    | change your title's color                                                                            |                                                                                                                                                                                                                                                                                                                       
-| caption         | string       | null    | write your main card's title                                                                         |                                                                                                                                                                                                                                                                                                                    
-| captionColor    | string       | null    | change your caption's color                                                                          |                                                                                                                                                                                                                                                                                                                       
-| footerStyle     | object       | null    | styles for the block wrapping the whole author's section                                             |
-
-The Card components accepts every piece of prop the <Block /> component accepts. Those will be applied on the <Block /> which wraps the whole <Card /> component.
+| **children**    | node         | null    | Card content                                                                                          |
+| **card**        | bool         | true    | Adds card styling                                                                                     |
+| **shadow**      | bool         | true    | Adds shadow styling                                                                                   |
+| **borderless**  | bool         | false   | Removes card border                                                                                   |
+| **image**       | string       | null    | Image URL or path                                                                                     |
+| **imageStyle**  | object       | null    | Custom image styles                                                                                   |
+| **imageBlockStyle** | object   | null    | Styles for the image container                                                                        |
+| **title**       | string       | null    | Card title                                                                                            |
+| **titleStyle**  | object       | null    | Custom title styles                                                                                   |
+| **caption**     | string       | null    | Card caption                                                                                          |
+| **captionStyle**| object       | null    | Custom caption styles                                                                                 |
+| **location**    | string       | null    | Location text                                                                                         |
+| **avatar**      | string       | null    | Avatar image URL                                                                                      |
+| **footer**      | node         | null    | Footer content                                                                                        |
+| **style**       | object       | null    | Custom styles                                                                                         |
+| **...View.props**| -           | -       | All React Native View props are supported                                                             |

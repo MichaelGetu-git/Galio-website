@@ -1,14 +1,26 @@
-# Website
+# Galio
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Galio is cool
 
-## Installation
+Galio is a React Native framework that provides pre-built components and beautiful cross-platform templates to speed up your mobile app development. This documentation site is built with Docusaurus.
+
+## Features
+
+*   **Rich set of customizable components:** Accordion, Block, Button, Card, Checkbox, DeckSwiper, Icon, Input, Navbar, Radio, Slider, Switch, Text, ToastNotification
+*   **Comprehensive documentation:** Detailed guides and API references for each component.
+*   **Examples:** Ready-to-use examples to showcase the usage of different components.
+*   **Easy to get started:** Simple installation and setup process.
+*   **Internationalization:** Supports multiple languages (English and Spanish).
+
+## Getting Started
+
+### Installation
 
 ```bash
 yarn
 ```
 
-## Local Development
+### Local Development
 
 ```bash
 yarn start
@@ -39,3 +51,13 @@ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## License
+
+[MIT](LICENSE)
+
+## Links
+
+*   [Documentation](https://your-docusaurus-site.example.com/docs/intro)
+*   [Starter Kit](https://github.com/galio-org/galio-starter-kit)
+*   [GitHub Repository](https://github.com/galio-org/galio-org.github.io)

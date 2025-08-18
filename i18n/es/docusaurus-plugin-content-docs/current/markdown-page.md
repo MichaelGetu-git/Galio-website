@@ -42,7 +42,7 @@ Puedes **resaltar texto** o hacerlo *cursiva*. También puedes ~~tacharlo~~.
 
 ### Enlaces
 
-Puedes crear [enlaces a otras páginas](/docs/intro) o [enlaces externos](https://docusaurus.io).
+Puedes crear [enlaces a otras páginas](../intro) o [enlaces externos](https://docusaurus.io).
 
 ### Imágenes
 

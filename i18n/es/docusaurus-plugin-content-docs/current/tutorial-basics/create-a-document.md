@@ -25,7 +25,7 @@ echo '# Mi Primer Documento
 
 ## ¿Qué sigue?
 
-Lee el [tutorial](/docs/intro) y construye algo genial.' > docs/my-doc.md
+Lee el [tutorial](../intro) y construye algo genial.' > docs/my-doc.md
 ```
 
 ## Agregar el documento a la barra lateral
@@ -45,9 +45,7 @@ docs/
   tutorial-extras/
     manage-docs-versions.md
     translate-your-site.md
-```
-
-## Configurar el orden de la barra lateral
+```## Configurar el orden de la barra lateral
 
 Puedes controlar el orden de los documentos en la barra lateral usando el frontmatter `sidebar_position`:
 
@@ -60,3 +58,5 @@ sidebar_position: 1
 
 Este documento aparecerá primero en la barra lateral.
 ```
+
+

@@ -22,15 +22,14 @@ Acabas de crear tu primer sitio Docusaurus y has aprendido los conceptos básico
 - Agrega más páginas y documentos
 
 ### 2. Agregar funcionalidades
-- [Búsqueda](/docs/search)
-- [Comentarios](/docs/docs-introduction#docusaurus-core)
-- [Analytics](/docs/analytics)
-- [PWA](/docs/pwa)
+- [Componentes](../components) - Explora todos los componentes disponibles
+- [Tema de Galio](../get-started/galio-theme) - Personaliza colores y estilos
+- [Uso Moderno](../get-started/modern-usage) - Mejores prácticas
 
 ### 3. Desplegar tu sitio
-- [GitHub Pages](/docs/deployment#deploying-to-github-pages)
-- [Netlify](/docs/deployment#deploying-to-netlify)
-- [Vercel](/docs/deployment#deploying-to-vercel)
+- [GitHub Pages](https://pages.github.com/) - Despliega en GitHub Pages
+- [Netlify](https://www.netlify.com/) - Despliega en Netlify
+- [Vercel](https://vercel.com/) - Despliega en Vercel
 
 ### 4. Unirse a la comunidad
 - [Discord](https://discord.gg/docusaurus)
@@ -40,7 +39,7 @@ Acabas de crear tu primer sitio Docusaurus y has aprendido los conceptos básico
 ## ¿Necesitas ayuda?
 
 Si tienes preguntas o necesitas ayuda, no dudes en:
-- Revisar la [documentación](/docs)
+- Revisar la [documentación](../intro)
 - Buscar en [GitHub Issues](https://github.com/facebook/docusaurus/issues)
 - Preguntar en [Discord](https://discord.gg/docusaurus)
 

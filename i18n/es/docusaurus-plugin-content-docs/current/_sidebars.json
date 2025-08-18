@@ -1,0 +1,70 @@
+{
+  "tutorialSidebar": [
+    "intro",
+    "README",
+    {
+      "type": "category",
+      "label": "Comenzar",
+      "link": {
+        "type": "generated-index",
+        "description": "Aprende cómo instalar y configurar Galio Framework"
+      },
+      "items": [
+        "get-started/install",
+        "get-started/galio-theme",
+        "get-started/modern-usage"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Componentes",
+      "link": {
+        "type": "generated-index",
+        "description": "Explora todos los componentes disponibles de Galio"
+      },
+      "items": [
+        "components/button",
+        "components/text",
+        "components/input",
+        "components/card",
+        "components/block",
+        "components/accordion",
+        "components/checkbox",
+        "components/radio",
+        "components/switch",
+        "components/slider",
+        "components/navbar",
+        "components/icon",
+        "components/toastnotification",
+        "components/deckswiper"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Tutorial - Básico",
+      "link": {
+        "type": "generated-index",
+        "description": "5 minutos para aprender los conceptos más importantes de Docusaurus."
+      },
+      "items": [
+        "tutorial-basics/create-a-document",
+        "tutorial-basics/create-a-blog-post",
+        "tutorial-basics/markdown-features",
+        "tutorial-basics/create-a-page",
+        "tutorial-basics/deploy-your-site",
+        "tutorial-basics/congratulations"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Tutorial - Extras",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
+        "tutorial-extras/manage-docs-versions",
+        "tutorial-extras/translate-your-site"
+      ]
+    }
+  ]
+} 

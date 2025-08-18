@@ -65,7 +65,7 @@ export default function IntroGalio(): JSX.Element {
                         </button>
                     </div>
                 </div>
-                <div className="lg:w-[45%] mt-12 lg:mt-0">
+                <div className="lg:w-[50%] mt-12 lg:mt-0">
                     <div className="flex flex-col items-center justify-center space-y-8 p-8 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-3xl border border-gray-200 dark:border-gray-700">
                         <div className="relative">
                             <div className="absolute -inset-4 bg-gradient-to-r from-[#ff1270] to-cyan-500 rounded-full blur-xl opacity-20 animate-pulse"></div>

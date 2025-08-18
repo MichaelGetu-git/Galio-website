@@ -20,10 +20,22 @@ Galio is a React Native framework that provides pre-built components and beautif
 yarn
 ```
 
+or 
+
+```bash
+npm
+```
+
 ### Local Development
 
 ```bash
 yarn start
+```
+
+or 
+
+```bash
+npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -32,6 +44,12 @@ This command starts a local development server and opens up a browser window. Mo
 
 ```bash
 yarn build
+```
+
+or 
+
+```bash
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
@@ -58,6 +76,5 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ## Links
 
-*   [Documentation](https://your-docusaurus-site.example.com/docs/intro)
 *   [Starter Kit](https://github.com/galio-org/galio-starter-kit)
 *   [GitHub Repository](https://github.com/galio-org/galio-org.github.io)

@@ -1,0 +1,40 @@
+import { JSX } from "react";
+
+export default function FrameworkBuild(): JSX.Element {
+    return (
+        <div className="flex flex-col">
+            {/* Mobile version - visible on small screens */}
+            <div className="flex flex-col text-center px-6 md:hidden">
+                <h1 className="text-gray-700 dark:text-white font-normal text-4xl font-bold mb-8">
+                    Build as a framework from the ground up
+                </h1>
+                <div className="flex text-start justify-center">
+                    <p className="text-gray-700 dark:text-white text-sm font-light">
+                        Creating your mobile apps from scratch with dedicated designers and developers can be very expensive. Using Galio Framework you get everything you need to start creating your fully functional mobile apps in just minutes.
+                    </p>
+                </div>
+            </div>
+
+            {/* Image container with desktop text overlay */}
+            <div className="relative w-full h-[300px] md:h-[750px]">
+                <img
+                    src="/img/img-framework.png"
+                    alt=""
+                    className="absolute top-0 left-0 w-full h-full object-contain object-center"
+                />
+
+                {/* Desktop version - hidden on small screens */}
+                <div className="hidden md:flex flex-col text-center w-[62%] pt-15 lg:pt-40 pl-15">
+                    <h1 className="text-gray-700 dark:text-white font-normal text-5xl font-bold mb-8">
+                        Build as a framework from the ground up
+                    </h1>
+                    <div className="flex text-start justify-center">
+                        <p className="text-gray-700 dark:text-white text-2xl font-light">
+                            Creating your mobile apps from scratch with dedicated designers and developers can be very expensive. Using Galio Framework you get everything you need to start creating your fully functional mobile apps in just minutes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}

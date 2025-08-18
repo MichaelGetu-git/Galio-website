@@ -1,0 +1,17 @@
+import { JSX } from "react"
+
+export default function GalioInterfaces(): JSX.Element {
+    return(
+        <div className="top-0 md:-mt-40 lg:mt-0 z-[1]">
+            <div className="flex items-center justify-center pb-8">
+                <h1 className="font-light text-center text-3xl md:text-5xl w-100 md:w-170">A Selection of interfaces built with Galio Framework</h1>
+            </div>
+            <div className="flex flex-col w-full items-center justify-center grid md:grid-cols-4 gap-10 ">
+                <img src="/img/screen1.png" alt="screens" className="border-gray-400 shadow-2xl rounded-3xl"/>
+                <img src="/img/screen2.png" alt="screens" className="border-gray-400 shadow-2xl rounded-3xl"/>
+                <img src="/img/screen3.png" alt="screens" className="border-gray-400 shadow-2xl rounded-3xl"/>
+                <img src="/img/screen4.png" alt="screens" className="border-gray-400 shadow-2xl rounded-3xl"/>
+            </div>
+        </div>
+    )
+}

@@ -9,6 +9,13 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import LandingHero from '../components/LandingHero';
 import IntroGalio from '../components/IntroGalio';
+import Features from '../components/Feaures';
+import GalioFeatures from '../components/IntroGalio2';
+import FrameworkBuild from '../components/FrameworkBuild';
+import GalioInterfaces from '../components/GalioInterfaces';
+import Categories from '../components/Categories';
+import TryPromo from '../components/TryPromo';
+import CommunityGalio from '../components/CommunityGalio';
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
@@ -16,15 +23,17 @@ export default function Home(): ReactNode {
     <Layout
     >
       <main
-        className='flex flex-col justify-center gap-16 px-4 sm:px-6 lg:px-10 mx-auto max-w-7xl'
+        className='flex flex-col justify-center gap-16'
       >
         <LandingHero/>
-        <div className='flex justify-center'>
-          <div className='w-[90%]'>
-            <IntroGalio/>
-          </div>
-        </div>
-        <HomepageFeatures />
+        <IntroGalio/>
+        <Features />
+        <GalioFeatures/>
+        <FrameworkBuild/>
+        <GalioInterfaces/>
+        <Categories/>
+        <TryPromo/>
+        <CommunityGalio/>
       </main>
     </Layout>
   );

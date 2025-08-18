@@ -30,9 +30,11 @@ export default function Features(): ReactNode {
           <p>
           <pre className="text-sm leading-5 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded-md overflow-x-auto">
           <code>
-              <span className="text-pink-500">{t('features.installation.npmCommand')}\n</span>
-              {t('features.installation.or')}\n
-              <span className="text-pink-500">{t('features.installation.yarnCommand')}\n</span>
+              <span className="text-pink-500">{t('features.installation.npmCommand')}</span>
+              <br />
+              {t('features.installation.or')}
+              <br />
+              <span className="text-pink-500">{t('features.installation.yarnCommand')}</span>
           </code>
           </pre>
         </p>
@@ -54,12 +56,19 @@ export default function Features(): ReactNode {
           <pre className="text-sm leading-5 bg-gray-200 dark:bg-gray-800 text-black dark:text-white p-4 rounded-md overflow-x-auto">
           <code>
               <span className="text-pink-500">{t('features.usage.importText')}</span>
-              {`\n${t('features.usage.renderText')}\n`}
-              {`  ${t('features.usage.viewText')}\n`}
-              {`    ${t('features.usage.textComponent')}\n`}
-              {`      ${t('features.usage.hiText')}\n`}
-              {`    ${t('features.usage.closeText')}\n`}
-              {`  ${t('features.usage.closeView')}\n`}
+              <br />
+              {t('features.usage.renderText')}
+              <br />
+              {`  ${t('features.usage.viewText')}`}
+              <br />
+              {`    ${t('features.usage.textComponent')}`}
+              <br />
+              {`      ${t('features.usage.hiText')}`}
+              <br />
+              {`    ${t('features.usage.closeText')}`}
+              <br />
+              {`  ${t('features.usage.closeView')}`}
+              <br />
               {`${t('features.usage.closeRender')}`}
           </code>
           </pre>

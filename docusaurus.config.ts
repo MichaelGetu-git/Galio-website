@@ -36,6 +36,14 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en','es'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en',
+      },
+      es: {
+        htmlLang: 'es',
+      },
+    },
   },
   plugins: [
     tailwindPlugin
@@ -60,7 +68,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/galio.png',
     navbar: {
       title: 'Galio',
       logo: {

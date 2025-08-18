@@ -413,3 +413,58 @@
      background-size: 300% 300%;
    }
  }
+ @media screen and (min-width: 768px) and (max-width: 1400px) {
+  .navbar__inner {
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
+  }
+  
+  .navbar__items {
+    flex: none; 
+    justify-content: flex-end;
+    gap: 0.5rem; 
+  }
+  
+  .navbar__item {
+    margin-left: 0.5rem; 
+    margin-right: 0;
+  }
+  
+  .navbar__item:last-child,
+  .navbar__item.navbar__item--search,
+  .navbar__item.navbar__item--locale-dropdown,
+  .header-github-link {
+    margin-left: 0.75rem; 
+  }
+  
+
+  .navbar__brand {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .navbar__title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 996px) {
+  .navbar__items {
+    gap: 0.25rem;
+  }
+  
+  .navbar__item {
+    margin-left: 0.25rem;
+  }
+  
+  .navbar__link {
+    padding: 0.5rem 0.75rem; 
+    font-size: 0.9rem;
+  }
+  
+  .navbar-button {
+    padding: 6px 12px; 
+    font-size: 0.9rem;
+  }
+}
+

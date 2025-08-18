@@ -1,5 +1,34 @@
 export const translations = {
   en: {
+    // Navbar
+    navbar: {
+      getStarted: "Get Started",
+      starterKit: "Starter Kit",
+      components: "Components",
+      examples: "Examples"
+    },
+
+    // Footer
+    footer: {
+      docs: {
+        title: "Docs",
+        galioDocs: "Galio Docs",
+        getStarted: "Get Started",
+        components: "Components"
+      },
+      community: {
+        title: "Community",
+        description: "Galio works many wonders for those who look to use it. So here use it."
+      },
+      preview: {
+        title: "Preview on Expo",
+        downloadText: "Download on Expo Client",
+        scanText: "Scan to view on your phone",
+        downloadButton: "Download App"
+      },
+      copyright: "Copyright © 2024 Galio, Inc. Built with Docusaurus."
+    },
+
     // Landing Hero
     hero: {
       title: "Build Beautiful React Native Apps",
@@ -188,33 +217,39 @@ export const translations = {
         title: "Galio Community",
         description: "If you're interested in discussing, participating and helping each other, the Galio community is the place to be."
       }
-    },
-
-    // Navigation
-    nav: {
-      getStarted: "Get Started",
-      starterKit: "Starter Kit",
-      components: "Components",
-      examples: "Examples"
-    },
-
-    // Footer
-    footer: {
-      docs: "Docs",
-      galioDocs: "Galio Docs",
-      getStarted: "Get Started",
-      components: "Components",
-      community: "Community",
-      previewExpo: "Preview on Expo",
-      downloadExpo: "Download on Expo Client",
-      scanToView: "Scan to view on your phone",
-      downloadApp: "Download App",
-      copyright: "Copyright © {year} Galio, Inc. Built with Docusaurus.",
-      communityText: "Galio works many wonders for those who look to use it. So here use it."
     }
   },
   
   es: {
+    // Navbar
+    navbar: {
+      getStarted: "Comenzar",
+      starterKit: "Kit de Inicio",
+      components: "Componentes",
+      examples: "Ejemplos"
+    },
+
+    // Footer
+    footer: {
+      docs: {
+        title: "Documentación",
+        galioDocs: "Docs de Galio",
+        getStarted: "Comenzar",
+        components: "Componentes"
+      },
+      community: {
+        title: "Comunidad",
+        description: "Galio hace muchas maravillas para aquellos que buscan usarlo. Así que úsalo aquí."
+      },
+      preview: {
+        title: "Vista Previa en Expo",
+        downloadText: "Descargar en Cliente Expo",
+        scanText: "Escanear para ver en tu teléfono",
+        downloadButton: "Descargar App"
+      },
+      copyright: "Copyright © 2024 Galio, Inc. Construido con Docusaurus."
+    },
+
     // Landing Hero
     hero: {
       title: "Construye Aplicaciones React Native Hermosas",
@@ -403,29 +438,6 @@ export const translations = {
         title: "Comunidad Galio",
         description: "Si estás interesado en discutir, participar y ayudarse mutuamente, la comunidad Galio es el lugar para estar."
       }
-    },
-
-    // Navigation
-    nav: {
-      getStarted: "Comenzar",
-      starterKit: "Kit de Inicio",
-      components: "Componentes",
-      examples: "Ejemplos"
-    },
-
-    // Footer
-    footer: {
-      docs: "Docs",
-      galioDocs: "Docs de Galio",
-      getStarted: "Comenzar",
-      components: "Componentes",
-      community: "Comunidad",
-      previewExpo: "Vista Previa en Expo",
-      downloadExpo: "Descargar en Cliente Expo",
-      scanToView: "Escanear para ver en tu teléfono",
-      downloadApp: "Descargar App",
-      copyright: "Copyright © {year} Galio, Inc. Construido con Docusaurus.",
-      communityText: "Galio hace muchas maravillas para aquellos que buscan usarlo. Así que úsalo aquí."
     }
   }
 };

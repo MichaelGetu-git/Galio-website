@@ -67,7 +67,7 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, pic, description, linkText1, linkText2, linkText3 }: FeatureItem) {
     return (
         <div className={clsx('col col--6 w-full my-5')}>
-            <a href={linkText3} className="border-gray-100 rounded-md shadow-2xl overflow-hidden block h-full w-140 flex flex-col !no-underline text-gray-700 dark:text-white font-light">
+            <a href={linkText3} className="border-gray-200 rounded-md shadow-2xl dark:bg-gray-800 overflow-hidden block h-full flex flex-col !no-underline text-gray-700 dark:text-white font-light">
                 <div className="w-full h-75 md:h-84 lg:h-80 flex-shrink-0">
                     <img
                         src={pic}

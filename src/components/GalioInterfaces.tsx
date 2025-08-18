@@ -2,7 +2,7 @@ import { JSX } from "react"
 
 export default function GalioInterfaces(): JSX.Element {
     return(
-        <div className="top-0 md:-mt-40 lg:mt-0 z-[1]">
+        <div className="top-0 lg:mt-0 md:mx-15 lg:mx-40 z-[1]">
             <div className="flex items-center justify-center pb-8">
                 <h1 className="font-light text-center text-3xl md:text-5xl w-100 md:w-170">A Selection of interfaces built with Galio Framework</h1>
             </div>

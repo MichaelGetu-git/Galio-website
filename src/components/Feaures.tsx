@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
       </p>
       </div>
     ),
-    link: "",
+    link: "/docs/intro",
     linkText: 'Read Installation'
   },
   {
@@ -61,7 +61,7 @@ const FeatureList: FeatureItem[] = [
         </pre>
       </p>
     ),
-    link: "",
+    link: "/docs/intro",
     linkText: 'Explore Documentation'
   },
   {
@@ -72,8 +72,8 @@ const FeatureList: FeatureItem[] = [
       </svg>
     ),
     description: 'Explore examples built with Galio.',
-    codeSection: <img src="/img/build.png" alt="Galio examples" />,
-    link: "",
+    codeSection: <img src="/img/build.png" alt="Galio examples" className='h-55 w-120'/>,
+    link: "/examples",
     linkText: "See Examples"
   },
 ];

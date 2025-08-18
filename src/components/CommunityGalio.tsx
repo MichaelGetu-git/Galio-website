@@ -1,17 +1,15 @@
 import type { ComponentType, ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
-import {
-    DocumentIcon,
-    PaintBrushIcon,
-    RocketLaunchIcon,
-} from '@heroicons/react/24/outline';
+import TwitterIcon from '../../static/img/twitter.svg'
+import GithubIcon from '../../static/img/github.svg'
+import MessageIcon from '../../static/img/message.svg'
 
 type FeatureItem = {
     title: string;
     description: ReactNode;
-    icon: ComponentType<React.SVGProps<SVGSVGElement>>;
-    color: string; // tailwind color classes
+    icon: ReactNode;
+    color: string; 
 };
 
 const FeatureList: FeatureItem[] = [
@@ -22,8 +20,8 @@ const FeatureList: FeatureItem[] = [
                 Follow us on Twitter and be the first to recieve news and updates. We are open for your feedback and questions.
             </>
         ),
-        icon: DocumentIcon,
-        color: 'bg-blue-500',
+        icon: <TwitterIcon className="h-9 w-9 text-white" />,
+        color: 'bg-pink-500',
     },
     {
         title: 'Contribute on Github',
@@ -32,7 +30,7 @@ const FeatureList: FeatureItem[] = [
                 You want to take part in the development? Fork Galio on GitHub and send us a pull request. To report a bug, file a new isue.
             </>
         ),
-        icon: PaintBrushIcon,
+        icon: <GithubIcon className="h-10 w-10 text-white" />,
         color: 'bg-pink-500',
     },
     {
@@ -42,12 +40,12 @@ const FeatureList: FeatureItem[] = [
                 If you're interested in discussing, participating and helping each other, the Galio community is the place to be.
             </>
         ),
-        icon: RocketLaunchIcon,
-        color: 'bg-red-500',
+        icon: <MessageIcon className="h-10 w-10 text-white" />,
+        color: 'bg-pink-500',
     },
 ];
 
-function Feature({ title, description, icon: Icon, color }: FeatureItem) {
+function Feature({ title, description, icon, color }: FeatureItem) {
     return (
         <div className={clsx('col col-3')}>
             <div className="text-center flex items-center justify-center p-4">
@@ -57,7 +55,7 @@ function Feature({ title, description, icon: Icon, color }: FeatureItem) {
                         color
                     )}
                 >
-                    <Icon className="h-6 w-6 text-white" />
+                    {icon}
                 </div>
             </div>
             <div className="text-center padding-horiz--md">
@@ -72,7 +70,7 @@ export default function CommunityGalio(): ReactNode {
     return (
         <section>
             <div className="container">
-                <div className='flex justify-center p-10 text-gray-700 text-5xl font-semibold'>
+                <div className='flex justify-center p-10 text-gray-700 dark:text-white text-5xl font-semibold'>
                     Become a part of the Galio community
                 </div>
                 <div className="row">
@@ -81,8 +79,8 @@ export default function CommunityGalio(): ReactNode {
                     ))}
                 </div>
             </div>
-            <div className='flex flex-col items-center justify-center pt-5'>
-                <h1 className='text-3xl text-gray-700 font-semibold pb-8'>This project exists thanks to all the people who contribute.</h1>
+            <div className='flex flex-col items-center justify-center pt-5 pb-20'>
+                <h1 className='text-3xl text-gray-700 dark:text-white font-semibold pb-8'>This project exists thanks to all the people who contribute.</h1>
                 <a href="https://github.com/galio-org/galio/contributors">
                         <img src="https://opencollective.com/galio/contributors.svg?width=890&amp;button=false" />
                     </a>

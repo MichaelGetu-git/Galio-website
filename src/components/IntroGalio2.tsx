@@ -1,17 +1,15 @@
 import type { ComponentType, ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
-import {
-  DocumentIcon,
-  PaintBrushIcon,
-  RocketLaunchIcon,
-} from '@heroicons/react/24/outline';
+import  CopyIcon  from '../../static/img/copy.svg';
+import RocketIcon from '../../static/img/rocket.svg'
+import Palette from '../../static/img/palette.svg'
 
 type FeatureItem = {
   title: string;
   description: ReactNode;
-  icon: ComponentType<React.SVGProps<SVGSVGElement>>;
-  color: string; // tailwind color classes
+  icon: ReactNode;
+  color: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -22,7 +20,7 @@ const FeatureList: FeatureItem[] = [
         The Galio Framework is a 100% free, open-source project, licensed under MIT. It will always remain free to use, powered by a huge international community.
       </>
     ),
-    icon: DocumentIcon,
+    icon: <CopyIcon className="h-8 w-8 text-white" />,
     color: 'bg-blue-500',
   },
   {
@@ -32,7 +30,7 @@ const FeatureList: FeatureItem[] = [
         Carefully crafted. Ready-made components, typography, and a gorgeous base theme that adapts to each project. You'll be building in style.
       </>
     ),
-    icon: PaintBrushIcon,
+    icon: <Palette className="h-8 w-8 text-white" />,
     color: 'bg-pink-500',
   },
   {
@@ -42,12 +40,12 @@ const FeatureList: FeatureItem[] = [
         Built with real app examples, component demos, guides, and how-to’s to get you up and running with mobile apps faster than ever before.
       </>
     ),
-    icon: RocketLaunchIcon,
+    icon: <RocketIcon className="h-8 w-8 text-white" />,
     color: 'bg-red-500',
   },
 ];
 
-function Feature({ title, description, icon: Icon, color }: FeatureItem) {
+function Feature({ title, description, icon, color }: FeatureItem) {
   return (
     <div className={clsx('col col-3')}>
       <div className="text-center flex items-center justify-center p-4">
@@ -57,7 +55,7 @@ function Feature({ title, description, icon: Icon, color }: FeatureItem) {
             color
           )}
         >
-          <Icon className="h-6 w-6 text-white" />
+          {icon}
         </div>
       </div>
       <div className="text-center padding-horiz--md">
@@ -72,7 +70,7 @@ export default function GalioFeatures(): ReactNode {
   return (
     <section>
       <div className="container">
-        <div className='flex justify-center p-10 text-5xl font-semibold'>
+        <div className='flex justify-center p-10 text-3xl md:text-5xl font-semibold'>
             What is Galio Framework?
         </div>
         <div className="row">

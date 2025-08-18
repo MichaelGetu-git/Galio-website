@@ -17,14 +17,14 @@ const FeatureList: FeatureItem[] = [
         title: 'For developers',
         pic: '/img/for-developers.png',
         description: 'Start building your mobile app in no time. Simply select the components you like and start customising to suit your needs.',
-        link: "",
+        link: "https://github.com/galio-org/galio",
         linkText: 'Download From GITHUB'
     },
     {
         title: 'Usage',
         pic: '/img/for-designers.png',
         description: 'Build an app you love. 200+ individually designed components, each with a specific purpose.',
-        link: "",
+        link: "https://github.com/galio-org/galio/archive/design.zip",
         linkText: 'Download Resources'
     },
 ];
@@ -57,10 +57,10 @@ function Feature({ title, pic, description, link, linkText }: FeatureItem) {
 export default function TryPromo(): ReactNode {
     return (
         <section className='relative -top-20 md:-top-50 flex flex-col h-250 md:h-250 lg:h-120'>
-            <div className='pb-10 md:pb-6 pl-10 md:pl-40 '>
-                <div className='w-full md:w-[50%]'>
+            <div className='pb-10 md:pb-6 pl-10 md:pl-20 '>
+                <div className='w-full md:w-[90%] lg:w-[50%]'>
                    <h1 className='text-5xl font-light'>Try it before judging</h1>
-                   <p className='text-lg md:text-2xl text-gray-600 font-light'>Galio Framework comes with tons of ready-to-use features & components. The samples contains several pages that you can use "as is" or add new blocks from the UI Kit.</p>
+                   <p className='text-lg md:text-2xl text-gray-600 dark:text-pink-200 font-light'>Galio Framework comes with tons of ready-to-use features & components. The samples contains several pages that you can use "as is" or add new blocks from the UI Kit.</p>
                 </div>
                 <div className='grid grid-cols-2 gap-4 w-60'>
                     <Ratings

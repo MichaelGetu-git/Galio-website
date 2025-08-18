@@ -45,21 +45,21 @@ export default function Examples(): JSX.Element {
                                 iconProps={{ className: "w-5 h-5 text-yellow-400" }} 
                                 rating={325} 
                                 ratingType={"Fork"} 
-                                link="https://github.com/galio-org/galio"
+                                link="https://github.com/galio-org/galio/fork"
                             />
                             <Ratings 
                                 icon={HeartIcon} 
                                 iconProps={{ className: "w-5 h-5 text-yellow-400" }} 
                                 rating={''} 
                                 ratingType={"Sponsor"} 
-                                link="https://github.com/galio-org/galio"
+                                link="https://github.com/sponsors/galio-org"
                             />
                             <Ratings
                                 icon={ChatBubbleBottomCenterTextIcon}
                                 iconProps={{ className: "w-5 h-5 text-yellow-400" }}
                                 rating={"online"}
                                 ratingType={"Chat"}
-                                link="https://github.com/galio-org/galio"
+                                link="https://discordapp.com/invite/EwmQBxS"
                             />
                         </div>
                     </div>

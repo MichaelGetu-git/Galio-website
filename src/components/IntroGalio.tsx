@@ -15,11 +15,11 @@ export default function IntroGalio(): JSX.Element {
     }
 
     return (
-        <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <section className="px-4 sm:px-6 lg:px-18 mx-auto">
             <Starshub />
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                 {/* Left Content */}
-                <div className="lg:w-[55%] space-y-6">
+                <div className="lg:w-[60%] space-y-6">
                     <div className="space-y-4">
                         <h1 className="text-3xl leading-tight tracking-tight sm:text-5xl sm:leading-tight lg:text-6xl font-bold bg-gradient-to-r from-[#ff1270] via-purple-600 to-cyan-500 dark:from-[#ff1270] dark:via-purple-400 dark:to-cyan-400 bg-clip-text text-transparent">
                             An Open-Source framework for react native
@@ -63,7 +63,7 @@ export default function IntroGalio(): JSX.Element {
                         </button>
                     </div>
                 </div>
-                <div className="lg:w-[53%] mt-12 lg:mt-0">
+                <div className="lg:w-[45%] mt-12 lg:mt-0">
                     <div className="flex flex-col items-center justify-center space-y-8 p-8 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-3xl border border-gray-200 dark:border-gray-700">
                         <div className="relative">
                             <div className="absolute -inset-4 bg-gradient-to-r from-[#ff1270] to-cyan-500 rounded-full blur-xl opacity-20 animate-pulse"></div>
@@ -96,21 +96,21 @@ export default function IntroGalio(): JSX.Element {
                                 iconProps={{ className: "w-5 h-5 text-yellow-400" }} 
                                 rating={325} 
                                 ratingType={"Fork"} 
-                                link="https://github.com/galio-org/galio"
+                                link="https://github.com/galio-org/galio/fork"
                             />
                             <Ratings 
                                 icon={HeartIcon} 
                                 iconProps={{ className: "w-5 h-5 text-yellow-400" }} 
                                 rating={''} 
                                 ratingType={"Sponsor"} 
-                                link="https://github.com/galio-org/galio"
+                                link="https://github.com/sponsors/galio-org"
                             />
                             <Ratings
                                 icon={ChatBubbleBottomCenterTextIcon}
                                 iconProps={{ className: "w-5 h-5 text-yellow-400" }}
                                 rating={"online"}
                                 ratingType={"Chat"}
-                                link="https://github.com/galio-org/galio"
+                                link="https://discordapp.com/invite/EwmQBxS"
                             />
                         </div>
                     </div>

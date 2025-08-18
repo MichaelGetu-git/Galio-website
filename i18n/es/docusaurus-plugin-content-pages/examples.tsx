@@ -1,9 +1,9 @@
 import Layout from "@theme/Layout";
 import { JSX } from "react";
-import Ratings from "../components/Ratings";
+import Ratings from "../../../src/components/Ratings";
 import { ChatBubbleBottomCenterTextIcon, CodeBracketIcon, HeartIcon, StarIcon } from "@heroicons/react/16/solid";
-import GalioExamples from "../components/GalioExamples";
-import { useTranslations } from "../hooks/useTranslations";
+import GalioExamples from "../../../src/components/GalioExamples";
+import { useTranslations } from "../../../src/hooks/useTranslations";
 
 export default function Examples(): JSX.Element {
     const { t } = useTranslations();
@@ -71,4 +71,4 @@ export default function Examples(): JSX.Element {
             </main>
         </Layout>
     )
-}
+} 

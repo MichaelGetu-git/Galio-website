@@ -1,6 +1,9 @@
 import { JSX } from "react";
+import { useTranslations } from "../hooks/useTranslations";
 
 export default function Starshub() : JSX.Element {
+    const { t } = useTranslations();
+    
     return (
         <div>
             <a
@@ -23,8 +26,8 @@ export default function Starshub() : JSX.Element {
                     </svg>
                 </div>
                 <span className="font-semibold text-xs text-gray-500  dark:text-gray-300">
-                    <span className="font-bold">3.2K</span>
-                    <span> GitHub stars so far</span>
+                    <span className="font-bold">{t('starshub.stars')}</span>
+                    <span> {t('starshub.text')}</span>
                 </span>
             </a>
         </div>

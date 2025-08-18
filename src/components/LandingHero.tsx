@@ -1,7 +1,9 @@
 import { ReactNode, useEffect, useState } from "react";
+import { useTranslations } from "../hooks/useTranslations";
 
 export default function LandingHero(): ReactNode {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const { t } = useTranslations();
 
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
@@ -78,7 +80,7 @@ export default function LandingHero(): ReactNode {
                 <div className="relative z-[4] space-y-3">
                     <div className="space-y-2">
                         <h2 className="text-xl md:text-2xl lg:text-3xl font-normal tracking-[-0.02em] text-gray-600">
-                            The wait is Over.
+                            {t('hero.waitOver')}
                         </h2>
                         <h2 
                             className="text-[32px] lg:text-[64px] md:text-[52px] leading-tight font-bold tracking-[-0.02em]"
@@ -89,10 +91,10 @@ export default function LandingHero(): ReactNode {
                                 backgroundClip: 'text'
                             }}
                         >
-                            Galio is Here
+                            {t('hero.galioHere')}
                         </h2>
                         <p className="max-w-[446px] text-gray-700 text-md leading-relaxed font-medium">
-                            Instantly transform your React Native apps with beautiful, customizable galio components
+                            {t('hero.description')}
                         </p>
                     </div>
                     <div className="flex items-center gap-8 mt-4 z-[4] relative">
@@ -104,13 +106,13 @@ export default function LandingHero(): ReactNode {
                                 boxShadow: '0 4px 20px rgba(236, 72, 153, 0.3)'
                             }}
                         >
-                            Start Building
+                            {t('hero.startBuilding')}
                         </a>
                         <a 
                             href="/docs/intro" 
                             className="text-pink-600 hover:text-pink-700 underline hover:no-underline transition-all duration-200 z-[4] font-medium px-4 py-2 rounded-lg hover:bg-pink-50"
                         >
-                            Learn More →
+                            {t('hero.learnMore')}
                         </a>
                     </div>
                 </div>

@@ -18,6 +18,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Get Started',
+      collapsed: false,
       link: {
         type: 'generated-index',
         description: 'Learn how to install and set up Galio Framework',
@@ -31,6 +32,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Components',
+      collapsed: false,
       link: {
         type: 'doc',
         id: 'components',
@@ -54,6 +56,7 @@ const sidebars: SidebarsConfig = {
       ],
     },
     'contributing',
+    
   ],
 };
 

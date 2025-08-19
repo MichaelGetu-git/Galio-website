@@ -5,6 +5,7 @@
     {
       "type": "category",
       "label": "Comenzar",
+      "collapsed": false,
       "link": {
         "type": "generated-index",
         "description": "Aprende cómo instalar y configurar Galio Framework"
@@ -18,6 +19,7 @@
     {
       "type": "category",
       "label": "Componentes",
+      "collapsed": false,
       "link": {
         "type": "doc",
         "id": "components"

@@ -126,11 +126,11 @@ const config: Config = {
             },
             {
               label: 'Get Started',
-              to: '/docs/tutorial-basics/create-a-page',
+              to: '/docs/get-started/install',
             },
             {
               label: 'Components',
-              to: '/docs/intro',
+              to: '/docs/components',
             },
           ],
         },

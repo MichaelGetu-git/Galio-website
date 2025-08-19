@@ -15,7 +15,6 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     'intro',
-    'components',
     {
       type: 'category',
       label: 'Get Started',
@@ -33,10 +32,11 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Components',
       link: {
-        type: 'generated-index',
-        description: 'Explore all available Galio components',
+        type: 'doc',
+        id: 'components',
       },
       items: [
+        'components',
         'components/button',
         'components/text',
         'components/input',
@@ -53,33 +53,7 @@ const sidebars: SidebarsConfig = {
         'components/deckswiper',
       ],
     },
-    {
-      type: 'category',
-      label: 'Tutorial - Basics',
-      link: {
-        type: 'generated-index',
-        description: '5 minutes to learn the most important Docusaurus concepts.',
-      },
-      items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/create-a-blog-post',
-        'tutorial-basics/markdown-features',
-        'tutorial-basics/create-a-page',
-        'tutorial-basics/deploy-your-site',
-        'tutorial-basics/congratulations',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Tutorial - Extras',
-      link: {
-        type: 'generated-index',
-      },
-      items: [
-        'tutorial-extras/manage-docs-versions',
-        'tutorial-extras/translate-your-site',
-      ],
-    },
+    'contributing',
   ],
 };
 

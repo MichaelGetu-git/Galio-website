@@ -269,7 +269,7 @@ export const translations = {
       title: "Un framework de código abierto para React Native",
       description: "Usa el poder de React Native para dar vida fácilmente a tus futuros proyectos móviles.",
       seeDocumentation: "Ver Documentación",
-      copied: "¡Copiado!",
+      copied: "Copiado!",
       npmCommand: "npm install galio-framework",
       github: "Github",
       documentation: "Documentación",
@@ -312,7 +312,7 @@ export const translations = {
     
     // Galio Features
     galioFeatures: {
-      title: "¿Qué es Galio Framework?",
+      title: "Qué es Galio Framework?",
       freeOpenSource: {
         title: "Gratuito y de Código Abierto",
         description: "Galio Framework es un proyecto 100% gratuito y de código abierto, licenciado bajo MIT. Siempre permanecerá gratuito para usar, impulsado por una enorme comunidad internacional."

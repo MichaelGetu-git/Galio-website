@@ -59,13 +59,15 @@ export default function TryPromo(): ReactNode {
     }
 
     return (
-        <section className='relative -top-20 md:-top-50 flex flex-col h-250 md:h-250 lg:h-120'>
-            <div className='pb-10 md:pb-6 pl-10 md:pl-20 '>
-                <div className='w-full md:w-[90%] lg:w-[50%]'>
-                   <h1 className='text-5xl font-light'>{t('tryPromo.title')}</h1>
-                   <p className='text-lg md:text-2xl text-gray-600 dark:text-pink-200 font-light'>{t('tryPromo.description')}</p>
+        <section className='-mt-26 md:-mt-36 flex flex-col'>
+            
+            <div className='pb-6 md:pb-8 px-4 sm:px-6 md:px-10 lg:px-20'>
+                <div className='w-full md:w-[90%] lg:w-[55%] mb-6 md:mb-8'>
+                   <h1 className='text-3xl sm:text-4xl md:text-5xl font-light mb-4'>{t('tryPromo.title')}</h1>
+                   <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-pink-200 font-light'>{t('tryPromo.description')}</p>
                 </div>
-                <div className='grid grid-cols-2 gap-4 w-70'>
+                
+                <div className='grid grid-cols-2 gap-4 text-base sm:text-xs w-70 md:w-75'>
                     <Ratings
                         icon={StarIcon}
                         iconProps={{ className: "w-5 h-5 text-yellow-400" }}
@@ -82,8 +84,9 @@ export default function TryPromo(): ReactNode {
                     />
                 </div>
             </div>
+            
             <div className="container">
-                <div className=" row justify-center">
+                <div className="row justify-center">
                     {FeatureList.map((props, idx) => (
                         <Feature key={idx} {...props} />
                     ))}

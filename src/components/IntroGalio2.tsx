@@ -73,7 +73,7 @@ export default function GalioFeatures(): ReactNode {
   return (
     <section>
       <div className="container">
-        <div className='flex justify-center p-10 text-3xl md:text-5xl font-semibold'>
+        <div className='flex md:justify-start justify-center md:p-10 text-2xl md:text-5xl font-semibold'>
             {t('galioFeatures.title')}
         </div>
         <div className="row">

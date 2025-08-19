@@ -73,7 +73,7 @@ export default function CommunityGalio(): ReactNode {
     return (
         <section>
             <div className="container">
-                <div className='flex justify-center p-10 text-gray-700 dark:text-white text-5xl font-semibold'>
+                <div className='flex md:justify-start justify-center p-10 text-gray-700 dark:text-white text-3xl md:text-5xl font-semibold'>
                     {t('community.title')}
                 </div>
                 <div className="row">

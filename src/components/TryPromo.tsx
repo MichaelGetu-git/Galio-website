@@ -65,7 +65,7 @@ export default function TryPromo(): ReactNode {
                    <h1 className='text-5xl font-light'>{t('tryPromo.title')}</h1>
                    <p className='text-lg md:text-2xl text-gray-600 dark:text-pink-200 font-light'>{t('tryPromo.description')}</p>
                 </div>
-                <div className='grid grid-cols-2 gap-4 w-60'>
+                <div className='grid grid-cols-2 gap-4 w-70'>
                     <Ratings
                         icon={StarIcon}
                         iconProps={{ className: "w-5 h-5 text-yellow-400" }}

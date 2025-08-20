@@ -15,7 +15,7 @@ export default function LandingHero(): ReactNode {
     }, []);
 
     return (
-        <section className="mt-6 sm:mt-10 lg:mt-16 xl:mt-20 mx-4 sm:mx-6 md:mx-10 lg:mx-20 xl:mx-35">
+        <section className="mt-6 sm:mt-10 lg:mt-16 xl:mt-20 mx-4 sm:mx-6 md:mx-10 lg:mx-20 xl:mx-18">
             <div className="relative w-full px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10 lg:py-12 z-[1] overflow-hidden rounded-2xl sm:rounded-3xl">
                 <div className="absolute inset-0 z-[1]">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-100 via-pink-50 to-indigo-100 rounded-2xl sm:rounded-3xl"></div>

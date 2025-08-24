@@ -69,7 +69,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     algolia: {
-      appId: '4F7NXVPO90',
+      appId: '4F7NXVP090',
       apiKey: 'ea4cee702ec7abcb065d4eb647fcb3bd',
       indexName: 'galio-crawl',
       contextualSearch: true,

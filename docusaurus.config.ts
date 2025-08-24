@@ -68,6 +68,16 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    algolia: {
+      appId: '4F7NXVPO90',
+      apiKey: 'ea4cee702ec7abcb065d4eb647fcb3bd',
+      indexName: 'galio-crawl',
+      contextualSearch: true,
+
+      searchParameters: {},
+      searchPagePath: 'search',
+      insights: false,
+    },
     image: 'img/galio.png',
     navbar: {
       title: 'Galio',
@@ -96,10 +106,6 @@ const config: Config = {
         {
           label: 'Examples',
           to: '/examples', 
-          position: 'right',
-        },
-        {
-          type: 'search',
           position: 'right',
         },
         {

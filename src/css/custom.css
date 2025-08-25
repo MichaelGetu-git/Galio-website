@@ -217,6 +217,11 @@
 .navbar {
     padding: 0.5rem 1rem;
   }
+    .navbar__logo img {
+    height: 24px !important; /* Slightly smaller on mobile */
+    width: auto !important;
+    display: block !important;
+  }
   
   .navbar__inner {
     justify-content: space-between;

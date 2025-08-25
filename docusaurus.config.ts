@@ -89,24 +89,24 @@ const config: Config = {
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
-          position: 'right',
+          position: 'left',
           label: 'Get Started',
         },
         {
           label: 'Starter Kit',
           to: 'https://github.com/galio-org/galio-starter-kit', 
-          position: 'right',
+          position: 'left',
         },
         {
           label: 'Components',
           to: '/docs/components', 
-          position: 'right',
+          position: 'left',
           
         },
         {
           label: 'Examples',
           to: '/examples', 
-          position: 'right',
+          position: 'left',
         },
         {
           href: 'https://github.com/galio-org/galio-org.github.io',

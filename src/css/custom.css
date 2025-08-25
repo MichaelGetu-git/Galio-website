@@ -218,6 +218,41 @@
  }
  
  @media screen and (max-width: 996px) {
+   .navbar {
+     padding: 0.5rem 1rem;
+   }
+   
+   .navbar__items {
+     gap: 0.5rem;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+     margin-left: auto;
+   }
+   
+   .navbar__search {
+     order: 3;
+     width: 100%;
+     margin-top: 0.5rem;
+     margin-bottom: 0.5rem;
+   }
+   
+   .navbar__search-input {
+     width: 100%;
+     max-width: 100%;
+   }
+   
+   .navbar__item {
+     margin: 0.25rem 0;
+   }
+   
+   .navbar__brand {
+     margin-right: 0;
+   }
+   
+   .header-github-link {
+     margin-left: 0.5rem;
+   }
+   
    .navbar-sidebar {
      background: var(--ifm-background-color);
    }
@@ -227,6 +262,7 @@
    }
  }
  
+ /* Navbar responsive fixes */
  .navbar-sidebar {
    position: fixed;      
    top: 0;               
@@ -241,37 +277,110 @@
    transition: transform 0.3s ease;
    border-right: 1px solid rgba(233, 30, 99, 0.2);
  }
- 
+
+ /* Ensure search bar is properly contained */
+ .navbar__search {
+   min-width: 200px;
+   flex-grow: 1;
+   max-width: 400px;
+ }
+
+ /* Improve mobile menu toggle button */
+ .navbar__toggle {
+   margin-left: 1rem;
+ }
+
+ /* Adjust logo size on smaller screens */
+ @media screen and (max-width: 767px) {
+   .navbar__logo img {
+     height: 24px !important;
+   }
+   
+   .navbar__title {
+     font-size: 1rem;
+   }
+ }
+
+ /* Ensure proper spacing in mobile sidebar */
+ .navbar-sidebar__items {
+   padding: 1rem;
+ }
+
+ .navbar-sidebar__item {
+   margin: 0.5rem 0;
+ }
+
  [data-theme='dark'] .navbar-sidebar {
    background: rgba(20, 15, 40, 0.95);
    backdrop-filter: blur(20px);
    box-shadow: 0 0 40px rgba(255, 64, 129, 0.2);
    border-right: 1px solid rgba(255, 64, 129, 0.3);
  }
- 
+
  .navbar-sidebar.active {
    transform: translateX(0);  
  }
- 
+
  .navbar__inner {
-   justify-content: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
  }
- 
+
  .navbar__brand {
-   margin-right: auto;
+   margin-right: 1rem;
  }
- 
+
  .navbar__items {
    flex: 1;
-   justify-content: center;
+   justify-content: flex-end;
+   gap: 1rem;
  }
- 
- .navbar__item:last-child,
- .navbar__item.navbar__item--search,
- .header-github-link {
-   margin-left: auto;
+
+ /* Medium screens (768px - 996px) */
+ @media screen and (min-width: 768px) and (max-width: 996px) {
+   .navbar__items {
+     gap: 0.5rem;
+   }
+   
+   .navbar__search {
+     order: 3;
+     width: 100%;
+     margin: 0.5rem 0;
+   }
+   
+   .navbar__search-input {
+     width: 100%;
+     max-width: 100%;
+   }
  }
- 
+
+ /* Small screens (below 768px) */
+ @media screen and (max-width: 767px) {
+   .navbar__items {
+     justify-content: space-between;
+     width: 100%;
+     padding: 0.5rem 0;
+   }
+   
+   .navbar__search {
+     order: 3;
+     width: 100%;
+     margin: 0.5rem 0;
+   }
+   
+   .navbar__item {
+     margin: 0.25rem 0;
+   }
+   
+   .navbar__brand {
+     flex: 1;
+   }
+   
+   .menu__list-item {
+     margin: 0.5rem 0;
+   }
+ }
+
  .footer {
    background: linear-gradient(135deg, 
      rgba(48, 37, 111, 0.9) 0%, 

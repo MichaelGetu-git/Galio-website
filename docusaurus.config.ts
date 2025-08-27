@@ -61,7 +61,7 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
         gtag: {
-          trackingID: 'G-999X9XX9XX',
+          trackingID: 'G-TD1M1WBJ07',
           anonymizeIP: true,
         },
         googleTagManager: {

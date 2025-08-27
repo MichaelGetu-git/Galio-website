@@ -24,8 +24,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'st-miki', // Usually your GitHub org/user name.
+  projectName: 'Galio', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -55,17 +55,27 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/st-miki/Galio.git',
+            'https://github.com/st-miki/Galio/blob/main',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+      {
+        gtag: {
+          trackingID: 'G-999X9XX9XX',
+          anonymizeIP: true,
+        },
+      },
+      {
+        googleTagManager: {
+          containerId: 'GTM-MJ9SQDH',
+        },
+      },
     ],
+    
   ],
-
   themeConfig: {
-    // Replace with your project's social card
     algolia: {
       appId: '4F7NXVPO9O',
       indexName: 'galio-crawl',
@@ -107,7 +117,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/galio-org/galio-org.github.io',
+          href: 'https://github.com/st-miki/Galio',
           position: 'right',
           className: 'header-github-link',
         },

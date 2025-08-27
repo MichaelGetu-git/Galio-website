@@ -56,7 +56,7 @@ const sidebars: SidebarsConfig = {
       ],
     },
     'contributing',
-    
+    'algolia-tutorial',
   ],
 };
 

@@ -4,6 +4,7 @@ import Ratings from "../components/Ratings";
 import { ChatBubbleBottomCenterTextIcon, CodeBracketIcon, HeartIcon, StarIcon } from "@heroicons/react/16/solid";
 import GalioExamples from "../components/GalioExamples";
 import { useTranslations } from "../hooks/useTranslations";
+import CarbonAds from "../components/CarbonAds";
 
 export default function Examples(): JSX.Element {
     const { t } = useTranslations();
@@ -35,6 +36,7 @@ export default function Examples(): JSX.Element {
                                 </button>
                             ))}
                         </div>
+                         <CarbonAds serve="CE7IPK3L" placement="galioio" />
                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:w-130">
                             <Ratings 
                                 icon={StarIcon} 
@@ -42,6 +44,8 @@ export default function Examples(): JSX.Element {
                                 rating={3200} 
                                 ratingType={t('examples.stars')} 
                                 link="https://github.com/galio-org/galio"
+                                field="stars"
+                                repo="galio-org/galio"
                             />
                             <Ratings 
                                 icon={CodeBracketIcon} 
@@ -49,6 +53,8 @@ export default function Examples(): JSX.Element {
                                 rating={325} 
                                 ratingType={t('examples.fork')} 
                                 link="https://github.com/galio-org/galio/fork"
+                                field="forks"
+                                repo="galio-org/galio"
                             />
                             <Ratings 
                                 icon={HeartIcon} 

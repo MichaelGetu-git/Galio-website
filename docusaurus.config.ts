@@ -60,20 +60,15 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      } satisfies Preset.Options,
-      {
         gtag: {
           trackingID: 'G-999X9XX9XX',
           anonymizeIP: true,
         },
-      },
-      {
         googleTagManager: {
           containerId: 'GTM-MJ9SQDH',
         },
-      },
+      } satisfies Preset.Options,
     ],
-    
   ],
   themeConfig: {
     algolia: {

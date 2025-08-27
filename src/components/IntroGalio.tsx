@@ -5,6 +5,7 @@ import { ChatBubbleBottomCenterTextIcon, StarIcon } from "@heroicons/react/16/so
 import { ShareIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { useTranslations } from "../hooks/useTranslations";
+import CarbonAds from "./CarbonAds";
 
 export default function IntroGalio(): JSX.Element {
     const [copied, setCopied] = useState(false);
@@ -63,6 +64,9 @@ export default function IntroGalio(): JSX.Element {
                                 </div>
                             )}
                         </button>
+                    </div>
+                    <div>
+                        <CarbonAds serve="CE7IPK3L" placement="galioio" />
                     </div>
                 </div>
                 <div className="lg:w-[50%] mt-12 lg:mt-0">

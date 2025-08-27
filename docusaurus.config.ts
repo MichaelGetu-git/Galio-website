@@ -112,6 +112,11 @@ const config: Config = {
           position: 'left',
         },
         {
+          label: 'Premium Themes',
+          to: '/premium-themes',
+          position: 'left'
+        },
+        {
           href: 'https://github.com/st-miki/Galio',
           position: 'right',
           className: 'header-github-link',

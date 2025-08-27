@@ -55,7 +55,11 @@ export const translations = {
       releases: "Releases",
       stars: "Stars",
       fork: "Fork",
+      premiumThemes: {
+        explore: "Explorar Temas Premium"
+      },
       sponsor: "Sponsor",
+      
       chat: "Chat"
     },
     
@@ -131,7 +135,11 @@ export const translations = {
       },
       github: "Github",
       viewApp: "View App",
-      sendProject: "Send Project"
+      sendProject: "Send Project",
+      nowUiPro: {
+        title: "Now UI PRO React Native",
+        description: "Now UI PRO React Native is a fully coded app template built over Galio io, React Native and Expo to allow you to create powerful and beautiful mobile applications."
+      }
     },
     
     // Starshub
@@ -352,7 +360,11 @@ export const translations = {
       },
       github: "Github",
       viewApp: "Ver App",
-      sendProject: "Enviar Proyecto"
+      sendProject: "Enviar Proyecto",
+      nowUiPro: {
+        title: "Now UI PRO React Native",
+        description: "Now UI PRO React Native es una plantilla de aplicación completamente codificada construida sobre Galio io, React Native y Expo para permitirte crear aplicaciones móviles potentes y hermosas."
+      }
     },
     
     // Starshub
@@ -443,4 +455,4 @@ export const translations = {
 };
 
 export type Locale = keyof typeof translations;
-export type TranslationKey = keyof typeof translations.en; 
+export type TranslationKey = keyof typeof translations.en;

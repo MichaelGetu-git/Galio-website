@@ -1,7 +1,31 @@
-import { JSX } from "react";
+import { JSX, useEffect, useState } from "react";
 import { useTranslations } from "../hooks/useTranslations";
 
 export default function Starshub() : JSX.Element {
+    const [dynamicRating, setDynamicRating] = useState<number | string>();
+
+    useEffect(()=> {
+        fetch(`https://api.github.com/repos/galio-org/galio`)
+            .then(res => res.json())
+            .then(data => {
+                setDynamicRating(data.stargazers_count);
+            })
+            .catch(()=> setDynamicRating("N/A"));
+    })
+
+    
+    const formatString = (dynamicRating: number | string): string => {
+        if (typeof dynamicRating === 'number') {
+            if (dynamicRating >= 1000000) {
+                return `${(dynamicRating/1000000).toFixed(1)}M`;
+            } else if (dynamicRating >= 1000) {
+                return `${(dynamicRating/ 1000).toFixed(1)}K`
+            }
+            return dynamicRating.toString();
+        }
+        return dynamicRating;
+    };
+
     const { t } = useTranslations();
     
     return (
@@ -26,7 +50,7 @@ export default function Starshub() : JSX.Element {
                     </svg>
                 </div>
                 <span className="font-semibold text-xs text-gray-500  dark:text-gray-300">
-                    <span className="font-bold">{t('starshub.stars')}</span>
+                    <span className="font-bold">{formatString(dynamicRating)}</span>
                     <span> {t('starshub.text')}</span>
                 </span>
             </a>

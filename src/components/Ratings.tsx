@@ -1,11 +1,13 @@
-import { ComponentType, JSX, SVGProps } from "react";
+import { ComponentType, JSX, SVGProps, useEffect, useState } from "react";
 
 type RatingItems = {
   icon: ComponentType<SVGProps<SVGSVGElement>>;
   link: string;
   iconProps: SVGProps<SVGSVGElement>;
   ratingType: string;
-  rating: number | string;
+  rating?: number | string;
+  repo?: string;
+  field?: "stars" | "forks";
 };
 
 export default function Ratings({
@@ -14,8 +16,22 @@ export default function Ratings({
   iconProps,
   ratingType,
   rating,
+  repo,
+  field
 }: RatingItems): JSX.Element {
-  
+  const [dynamicRating, setDynamicRating] = useState<number | string>(rating ?? "");
+
+  useEffect(() => {
+    if (repo && field) {
+      fetch(`https://api.github.com/repos/galio-org/galio`)
+        .then(res => res.json())
+        .then(data => {
+          if (field === 'stars') setDynamicRating(data.stargazers_count);
+          if (field === 'forks') setDynamicRating(data.forks_count);
+        })
+        .catch(() => setDynamicRating("N/A"));
+    }
+  }, [repo, field])
   // Format large numbers (e.g., 3200 -> 3.2K)
   const formatRating = (rating: number | string): string => {
     if (typeof rating === 'number') {
@@ -42,16 +58,17 @@ export default function Ratings({
       <div className="flex gap-1 items-center">
         {Icon && <Icon {...iconProps} className={`w-3.5 h-3.5 ${iconProps?.className || ''}`} />}
         {ratingType && (
-          <span className={rating !== '' ? `border-r border-gray-300 dark:border-gray-600 pr-1.5` : ``}>
+          <span className={dynamicRating !== '' ? `border-r border-gray-300 dark:border-gray-600 pr-1.5` : ``}>
             {ratingType}
           </span>
         )}
       </div>
-      {rating !== '' && (
+      {dynamicRating !== '' && (
         <div className="pl-1.5 text-[#ff1270] font-semibold">
-          {formatRating(rating)}
+          {formatRating(dynamicRating)}
         </div>
       )}
     </a>
   );
 }
+

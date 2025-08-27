@@ -89,16 +89,18 @@ export default function IntroGalio(): JSX.Element {
                             <Ratings 
                                 icon={StarIcon} 
                                 iconProps={{ className: "w-5 h-5 text-yellow-400" }} 
-                                rating={3200} 
                                 ratingType={t('intro.stars')} 
                                 link="https://github.com/galio-org/galio"
+                                repo="galio-org/galio"
+                                field = "stars"
                             />
                             <Ratings 
                                 icon={CodeBracketIcon} 
                                 iconProps={{ className: "w-5 h-5 text-yellow-400" }} 
-                                rating={325} 
                                 ratingType={t('intro.fork')} 
                                 link="https://github.com/galio-org/galio/fork"
+                                repo = "galio-org/galio"
+                                field = "forks"
                             />
                             <Ratings 
                                 icon={HeartIcon} 
